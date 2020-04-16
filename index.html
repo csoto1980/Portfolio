@@ -2,13 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="christine soto">
 
-    <link rel="stylesheet" href="css/animate.css">
+    <title>Web Developer</title>
+
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <script src="t.min.js"></script>
+    <script src="wow.min.js"></script>
 </head>
 
 <body>
@@ -41,8 +48,6 @@
                 <li><a href="contact.html">contact<span>.</span></a></li>
             </ul>
         </div>
-        <!------------------- navbar end-------------------->
-
 
         <!------------------- hero section start-------------------->
         <div class="hero">
@@ -52,14 +57,12 @@
         </div>
 
         <div class="scroll-down"></div>
-        <!------------------- hero section end-------------------->
-
 
         <!------------------- projects section start-------------------->
         <div class="container-fluid">
             <br><br><br>
 
-            <h6>selected projects</h6>
+            <h3>selected projects</h3>
 
             <div class="vertical"></div>
             <br>
@@ -70,13 +73,13 @@
             <div class="row">
                 <div class="col-lg-8"></div>
 
-                <div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project1 WOW fadeInUp" onclick="location.href='project.html'"></div>
             </div>
 
             <div class="whitespace"></div>
 
             <div class="row">
-                <div class="col-lg-6 project project2" onclick="location.href='project.html'"></div>
+                <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div>
 
                 <div class="col-lg-6"></div>
             </div>
@@ -86,7 +89,7 @@
             <div class="row">
                 <div class="col-lg 7"></div>
 
-                <div class="col-lg-4 project project3" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.html'"></div>
 
                 <div class="col-lg-1"></div>
             </div>
@@ -96,15 +99,13 @@
             <div class="row">
                 <div class="col-lg-1"></div>
 
-                <div class="col-lg-5 project project4" onclick="location.href='project.html'"></div>
+                <div class="col-lg-5 project project4 wow fadeInUp" onclick="location.href='project.html'"></div>
 
                 <div class="col-lg-6"></div>
             </div>
 
             <div class="whitespace"></div>
         </div>
-        <!------------------- projects section end-------------------->
-
 
         <!-------------------- footer start-------------------->
         <div class="footer">
@@ -114,7 +115,7 @@
                 <div class="collab">
                     <div class="row">
                         <div class="col-lg-12">
-                            <p>Need front-end web development assistance? I can help you.</p>
+                            <p class="wow fadeInUp">front-end web development assistance? I can help you.</p>
                         </div>
                     </div>
                 </div>
@@ -130,18 +131,18 @@
                 <div class="info">
                     <div class="row">
                         <div class="col-lg-4" id="personal">
-                            <p>connect with me</p>
-                            <h4>ig @christineSoto</h4>
+                            <p class="wow fadeInUp">connect with me</p>
+                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @christineSoto</h4>
                             <br><br>
                         </div>
 
-                        <div class="col-lg-4" id="media">
-                            <p>follow me</p>
+                        <div class="col-lg-4" class="align-center" id="media">
+                            <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
 
                             <ul>
-                                <li id="fb">facebook</li>
-                                <li id="ig">instagram</li>
-                                <li id="gh">github</li>
+                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">facebook</li>
+                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">instagram</li>
+                                <li id="gh" class="wow fadeInUp" data-wow-delay="0.8s">github</li>
                             </ul>
 
                             <br><br>
@@ -160,7 +161,7 @@
 
             </div>
         </div>
-        <!------------------- footer start-------------------->
+        <!------------------- footer end-------------------->
 
         <br><br><br><br>
 
@@ -168,13 +169,12 @@
 
     <!-- script -->
     <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https:code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="wow.min.js"></script>
     <script type="text.javascript">
 
         // navigation start
@@ -201,6 +201,12 @@
             opacity: 0,
             ease: Expo.easeInOut
         })
+
+        TweenMax.staggerFrom("menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+        }, 0.1);
 
         // nav animation ends
 
