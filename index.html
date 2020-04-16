@@ -47,7 +47,7 @@
         <!------------------- hero section start-------------------->
         <div class="hero">
             <div class="header">
-                <h1 class="line anim-typewriter">Front-end web developer at your service</h1>
+                <h1 class="line anim-typewriter">front-end web developer at your service</h1>
             </div>
         </div>
 
@@ -139,10 +139,9 @@
                             <p>follow me</p>
 
                             <ul>
-                                <li id="fb">fb</li>
-                                <li id="ig">ig</li>
-                                <li id="tw">tw</li>
-                                <li id="gh">gh</li>
+                                <li id="fb">facebook</li>
+                                <li id="ig">instagram</li>
+                                <li id="gh">github</li>
                             </ul>
 
                             <br><br>
@@ -195,9 +194,13 @@
             $("#resize").toggleClass("active");
         });
 
-        // navigation end
-
         // nav animation
+        TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        })
 
         // nav animation ends
 
