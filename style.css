@@ -55,9 +55,6 @@ body {
 	animation-name: fadeInUp;
 }
 
-
-
-
 /*---------------typewriter effect------------------------*/
 .line {
 	width: 24em;
@@ -71,8 +68,8 @@ body {
 }
 
 .anim-typewriter {
-	animation: typewriter 4s steps(40) 1s 1 normal both,
-		blinkTextCussor 500ms steps(40) infinite normal;
+	animation: typewriter 4s steps(44) 1s 1 normal both,
+		blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
@@ -81,7 +78,7 @@ body {
 	}
 
 	to {
-		width: 18em;
+		width: 100%;
 	}
 }
 
@@ -306,9 +303,9 @@ nav #menu li a:hover {
 	width: 13px;
 	height: 13px;
 	border-bottom: 2px solid #fff;
-	border-right: 2pz solid #fff;
+	border-right: 2px solid #fff;
 	-webkit-transform: translate(-50%, 0) rotate(45deg);
-	animation: fade_move-down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+	animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 
 }
 
@@ -437,7 +434,7 @@ h6 {
 
 /*---------------footer section------------------------*/
 .collab {
-	text-align: center;
+	text-align: right;
 }
 
 .collab p {
@@ -483,7 +480,7 @@ h6 {
 	background: #fcaf45;
 }
 
-/* #tw::before {
+#tw::before {
 	display: inline-block;
 	content: '';
 	border-radius: 100%;
@@ -491,7 +488,7 @@ h6 {
 	width: 4px;
 	margin-right: 6px;
 	background: #55acee;
-} */
+}
 
 #gh::before {
 	display: inline-block;
@@ -536,6 +533,108 @@ h6 {
 	}
 }
 
-/*---------------contact form------------------------*/
+/*---------------work page------------------------*/
+.hero-content {
+	margin-left: 0%;
+}
+
+.hero-content p {
+	font-weight: 300;
+	line-height: 36px;
+	color: grey;
+}
+
+.hero-content h6 {
+	text-align: left;
+}
+
+@media(max-width: 768px) {
+	.hero-content {
+		padding-top: 50px;
+		width: 96%;
+		margin: 0 auto;
+	}
+}
+
 
 /*---------------about page------------------------*/
+
+.about {
+	height: 500px;
+	margin-top: 120px
+}
+
+.image {
+	background: url("zen1.jpg") no-repeat 50% 50%;
+}
+
+/*---------------contact form------------------------*/
+
+#contact-form {
+	margin: 5% 1.4%;
+
+}
+
+#contact-form ul {
+	list-style: none;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+#contact-form li:last-of-type {
+	border-bottom: none;
+}
+
+#contact-form label {
+	display: block;
+	font-size: .8em;
+	color: #999;
+	padding-left: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+	width: 100%;
+	padding: 5px;
+	border: none;
+	resize: vertical;
+	background: transparent;
+	color: #fff;
+	font-weight: bolder;
+}
+
+input:focus {
+	outline: none;
+	border: none;
+}
+
+textarea:focus {
+	outline: none;
+	border: none;
+}
+
+.textarea {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+	margin-left: 50px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	background: transparent;
+	color: #dfdfdf;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+.send:hover {
+	background: #dfdfdf;
+	color: #101010;
+}
+
+@media(max-width: 768px) {
+	#contact-form {
+		margin: 5% -8%;
+		width: 98%;
+	}
+}
