@@ -15,7 +15,7 @@ body {
 	height: 100px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	.whitespace {
 		display: none;
 	}
@@ -34,8 +34,7 @@ body {
 }
 
 .anim-typewriter {
-	animation: typewriter 4s steps(40) .5s 1 normal both,
-		blinkTextCurser 500ms steps(40) infinite normal;
+	animation: typewriter 4s steps(40) .5s 1 normal both, blinkTextCurser 500ms steps(40) infinite normal;
 }
 
 @keyframes typewriter {
@@ -48,7 +47,7 @@ body {
 	}
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	@keyframes typewriter {
 		from {
 			width: 0;
@@ -199,7 +198,7 @@ nav #menu li a:hover {
 	opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	#toggle {
 		visibility: visible;
 		opacity: 1;
@@ -225,7 +224,7 @@ nav #menu li a:hover {
 	}
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
 	#resize {
 		visibility: hidden !important;
 	}
@@ -246,7 +245,7 @@ nav #menu li a:hover {
 	line-height: 58px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	.header h1 {
 		font-size: 26px;
 	}
@@ -305,26 +304,30 @@ h6 {
 }
 
 .project1 {
-	background: url(https://images.unsplash.com/photo-1534196511436-921a4e99f297?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
+	background: url(https://images.unsplash.com/photo-1534196511436-921a4e99f297?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80)
+		no-repeat 50% 50%;
 	background-size: cover;
 }
 
 .project2 {
-	background: url(https://images.unsplash.com/photo-1529717730488-7a2492983b2c?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
+	background: url(https://images.unsplash.com/photo-1529717730488-7a2492983b2c?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80)
+		no-repeat 50% 50%;
 	background-size: cover;
 }
 
 .project3 {
-	background: url(https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
+	background: url(https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80)
+		no-repeat 50% 50%;
 	background-size: cover;
 }
 
 .project4 {
-	background: url(https://images.unsplash.com/photo-1483058712412-4245e9b90334??ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
+	background: url(https://images.unsplash.com/photo-1483058712412-4245e9b90334??ixlib=rb-1.2.1&ixid=eyJhcHBFawQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80)
+		no-repeat 50% 50%;
 	background-size: cover;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	.project {
 		width: 90% !important;
 		margin: 14px auto;
@@ -381,7 +384,7 @@ h6 {
 	height: 4px;
 	width: 4px;
 	margin-left: 6px;
-	background: #4156f2
+	background: #4156f2;
 }
 
 #ig::before {
@@ -427,8 +430,7 @@ h6 {
 	display: inline-block;
 }
 
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
 	.collab,
 	#personal,
 	#media,
@@ -458,7 +460,7 @@ h6 {
 	text-align: left;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	.hero-content {
 		padding-top: 50px;
 		width: 96%;
@@ -480,7 +482,7 @@ h6 {
 /*---------------contact image------------------------*/
 .contact {
 	height: 500px;
-	margin-top: 120px
+	margin-top: 120px;
 }
 
 .image2 {
@@ -554,7 +556,7 @@ textarea:focus {
 	color: #101010;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	#contact-form {
 		margin: 5% -8%;
 		width: 98%;
